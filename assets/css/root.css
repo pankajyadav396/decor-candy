@@ -1,0 +1,37 @@
+:root {
+    /* fontsize */
+    --fs-xl: 16px;
+    --fs-xxl: 40px;
+
+    /* colors */
+    --white: #ffffff;
+    --grey: #bbb4b6;
+    --blue: #0f63dd;
+    --purple: #9c6cc1;
+  
+    /* line-height */
+      --lh-lg : 100%;
+      --lh-xl : 120%;
+      --lh-xxl: 110%;
+  }
+
+  @media (min-width: 576px){
+    :root {
+        /* fontsize */
+        --fs-xl: 20px;
+        --fs-xxl: 52px;
+
+         /* line-height */
+      --lh-xxl: 150%;
+      }
+}
+
+@media (min-width: 768px){
+    :root {
+        --fs-xxl: 64px;
+      }
+}
+@media (min-width: 992px){
+    :root {
+        --fs-xxl: 72px;}
+}

@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+  }  
+
+/* fontsize */
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+.fs-xxl {
+  font-size: var(--fs-xxl);
+}
+
+/* color */
+.text-white {
+  color: var(--white);
+}
+.text-grey {
+  color: var(--grey);
+}
+.text-blue {
+  color: var(--blue);
+}
+.text-purple {
+  color: var(--purple);
+}
+
+/* line-height */
+.lh-lg{
+    line-height: var(--lh-lg);
+}
+.lh-xl {
+  line-height: var(--lh-xl);
+}
+.lh-xxl {
+  line-height: var(--lh-xxl);
+}
+.fw-normal {
+  font-weight: 400;
+}
+.fw-semibold {
+  font-weight: 600;
+}
+.fw-extrabold {
+  font-weight: 800;
+}
+
+/* fontfamily */
+.font-Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.font-open {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* commanClass */
+.d-flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+
+/* backgraund */
+.candyImg {
+  background-image: url("../images/webp/bgFullImage.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.iconbggradient {
+  background: linear-gradient(260.94deg, #f07cbd 9.82%, #8753a4 104.93%);
+  transition: all .3s linear;
+}
+.iconbggradient:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.bgText {
+  background: url("../images/webp/textImage.webp");
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
+  background-size: cover;
+  -webkit-background-clip: text;
+  animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 40% 40%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+
+}
+
+/* width */
+.max-w-784 {
+  max-width: 784px;
+}
+.max-w-544 {
+  max-width: 544px;
+}
+
+.candyLogo {
+    width: 267px;
+    height: 209px;
+    cursor: pointer;
+}
+.iconCircle {
+  width: 34px;
+  height: 34px;
+  border-radius: 118px;
+}
+
+/* padding */
+.pt-20{
+    padding-top: 20px;
+}
+.pt-16 {
+  padding-top: 16px;
+}
+.pb-16{
+     padding-bottom: 16px;
+}
+.pt-8{
+    padding-top: 8px;
+}
+.gap-15 {
+  gap: 15px;
+}
+.block{
+    display: block;
+}
+.mr-35{
+    margin-right: 35px;
+}
+.px-12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.h-80{
+    height: 88px;
+    /* line-height: 88px; */
+}
+
+.vibesBox {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 16.6px 0px var(--purple);
+    padding: 10px;
+    display: flex;
+  }
+  
+  .l,.l:nth-child(8) {
+    margin: 0.15em;
+    border-radius: 5em;
+    width: 3.12px;
+    background-color: #9C6CC1;
+    height: 46px;
+    animation: load_5186 cubic-bezier(.41,.44,.72,.69) 2s infinite;
+  }
+  
+  .l:nth-child(1), 
+  .l:nth-child(5),
+  .l:nth-child(8) {
+    background-color: #9C6CC1;
+    animation-delay: .25s;
+  }
+  
+  .l:nth-child(3), 
+  .l:nth-child(7) {
+    background-color: #9C6CC1;
+    animation-delay: .5s;
+  }
+  
+  .l:nth-child(4), 
+  .l:nth-child(6) {
+    background-color: #9C6CC1;
+    animation-delay: .75s;
+  }
+  
+  @keyframes load_5186 {
+    0%,100% {
+      transform: scaleY(1);
+    }
+  
+    50% {
+      transform: scaleY(0.2);
+    }
+
+  }
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    right: -6%;
+    bottom: 2%;
+}
+
+/* media */
+@media (min-width: 576px){
+      .candyLogo {
+        width: 368px;
+        height: 261px;
+      }
+      .absolute{
+        position: absolute;
+        right: 0%;
+        bottom: 2%;
+    }
+
+    .pt-sm-40{
+        padding-top: 40px;
+    }
+    .pt-sm-0{
+        padding-top: 0;
+    }
+}
